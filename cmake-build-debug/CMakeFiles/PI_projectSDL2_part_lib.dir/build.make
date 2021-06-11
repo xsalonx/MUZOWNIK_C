@@ -62,10 +62,10 @@ RM = "D:\CLion 2020.3\bin\cmake\win\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\programowanie\c_cpp\c\NUTOWNIK_PI_PART_LIB
+CMAKE_SOURCE_DIR = D:\programowanie\c_cpp\c\MUZOWNIK_PI_PART_LIB
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\programowanie\c_cpp\c\NUTOWNIK_PI_PART_LIB\cmake-build-debug
+CMAKE_BINARY_DIR = D:\programowanie\c_cpp\c\MUZOWNIK_PI_PART_LIB\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/PI_projectSDL2_part_lib.dir/depend.make
@@ -78,29 +78,29 @@ include CMakeFiles/PI_projectSDL2_part_lib.dir/flags.make
 
 CMakeFiles/PI_projectSDL2_part_lib.dir/src/library.c.obj: CMakeFiles/PI_projectSDL2_part_lib.dir/flags.make
 CMakeFiles/PI_projectSDL2_part_lib.dir/src/library.c.obj: ../src/library.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\programowanie\c_cpp\c\NUTOWNIK_PI_PART_LIB\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/PI_projectSDL2_part_lib.dir/src/library.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\PI_projectSDL2_part_lib.dir\src\library.c.obj   -c D:\programowanie\c_cpp\c\NUTOWNIK_PI_PART_LIB\src\library.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\programowanie\c_cpp\c\MUZOWNIK_PI_PART_LIB\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/PI_projectSDL2_part_lib.dir/src/library.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\PI_projectSDL2_part_lib.dir\src\library.c.obj   -c D:\programowanie\c_cpp\c\MUZOWNIK_PI_PART_LIB\src\library.c
 
 CMakeFiles/PI_projectSDL2_part_lib.dir/src/library.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PI_projectSDL2_part_lib.dir/src/library.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\programowanie\c_cpp\c\NUTOWNIK_PI_PART_LIB\src\library.c > CMakeFiles\PI_projectSDL2_part_lib.dir\src\library.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\programowanie\c_cpp\c\MUZOWNIK_PI_PART_LIB\src\library.c > CMakeFiles\PI_projectSDL2_part_lib.dir\src\library.c.i
 
 CMakeFiles/PI_projectSDL2_part_lib.dir/src/library.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PI_projectSDL2_part_lib.dir/src/library.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\programowanie\c_cpp\c\NUTOWNIK_PI_PART_LIB\src\library.c -o CMakeFiles\PI_projectSDL2_part_lib.dir\src\library.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\programowanie\c_cpp\c\MUZOWNIK_PI_PART_LIB\src\library.c -o CMakeFiles\PI_projectSDL2_part_lib.dir\src\library.c.s
 
 CMakeFiles/PI_projectSDL2_part_lib.dir/src/main.c.obj: CMakeFiles/PI_projectSDL2_part_lib.dir/flags.make
 CMakeFiles/PI_projectSDL2_part_lib.dir/src/main.c.obj: ../src/main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\programowanie\c_cpp\c\NUTOWNIK_PI_PART_LIB\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/PI_projectSDL2_part_lib.dir/src/main.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\PI_projectSDL2_part_lib.dir\src\main.c.obj   -c D:\programowanie\c_cpp\c\NUTOWNIK_PI_PART_LIB\src\main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\programowanie\c_cpp\c\MUZOWNIK_PI_PART_LIB\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/PI_projectSDL2_part_lib.dir/src/main.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\PI_projectSDL2_part_lib.dir\src\main.c.obj   -c D:\programowanie\c_cpp\c\MUZOWNIK_PI_PART_LIB\src\main.c
 
 CMakeFiles/PI_projectSDL2_part_lib.dir/src/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PI_projectSDL2_part_lib.dir/src/main.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\programowanie\c_cpp\c\NUTOWNIK_PI_PART_LIB\src\main.c > CMakeFiles\PI_projectSDL2_part_lib.dir\src\main.c.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\programowanie\c_cpp\c\MUZOWNIK_PI_PART_LIB\src\main.c > CMakeFiles\PI_projectSDL2_part_lib.dir\src\main.c.i
 
 CMakeFiles/PI_projectSDL2_part_lib.dir/src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PI_projectSDL2_part_lib.dir/src/main.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\programowanie\c_cpp\c\NUTOWNIK_PI_PART_LIB\src\main.c -o CMakeFiles\PI_projectSDL2_part_lib.dir\src\main.c.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-W\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\programowanie\c_cpp\c\MUZOWNIK_PI_PART_LIB\src\main.c -o CMakeFiles\PI_projectSDL2_part_lib.dir\src\main.c.s
 
 # Object files for target PI_projectSDL2_part_lib
 PI_projectSDL2_part_lib_OBJECTS = \
@@ -117,7 +117,7 @@ PI_projectSDL2_part_lib_EXTERNAL_OBJECTS =
 ../PI_projectSDL2_part_lib.exe: CMakeFiles/PI_projectSDL2_part_lib.dir/linklibs.rsp
 ../PI_projectSDL2_part_lib.exe: CMakeFiles/PI_projectSDL2_part_lib.dir/objects1.rsp
 ../PI_projectSDL2_part_lib.exe: CMakeFiles/PI_projectSDL2_part_lib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\programowanie\c_cpp\c\NUTOWNIK_PI_PART_LIB\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable ..\PI_projectSDL2_part_lib.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\programowanie\c_cpp\c\MUZOWNIK_PI_PART_LIB\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable ..\PI_projectSDL2_part_lib.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\PI_projectSDL2_part_lib.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -130,6 +130,6 @@ CMakeFiles/PI_projectSDL2_part_lib.dir/clean:
 .PHONY : CMakeFiles/PI_projectSDL2_part_lib.dir/clean
 
 CMakeFiles/PI_projectSDL2_part_lib.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\programowanie\c_cpp\c\NUTOWNIK_PI_PART_LIB D:\programowanie\c_cpp\c\NUTOWNIK_PI_PART_LIB D:\programowanie\c_cpp\c\NUTOWNIK_PI_PART_LIB\cmake-build-debug D:\programowanie\c_cpp\c\NUTOWNIK_PI_PART_LIB\cmake-build-debug D:\programowanie\c_cpp\c\NUTOWNIK_PI_PART_LIB\cmake-build-debug\CMakeFiles\PI_projectSDL2_part_lib.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\programowanie\c_cpp\c\MUZOWNIK_PI_PART_LIB D:\programowanie\c_cpp\c\MUZOWNIK_PI_PART_LIB D:\programowanie\c_cpp\c\MUZOWNIK_PI_PART_LIB\cmake-build-debug D:\programowanie\c_cpp\c\MUZOWNIK_PI_PART_LIB\cmake-build-debug D:\programowanie\c_cpp\c\MUZOWNIK_PI_PART_LIB\cmake-build-debug\CMakeFiles\PI_projectSDL2_part_lib.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/PI_projectSDL2_part_lib.dir/depend
 

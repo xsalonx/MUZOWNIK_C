@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "D:/programowanie/c_cpp/c/NUTOWNIK_PI_PART_LIB/src/library.c" "D:/programowanie/c_cpp/c/NUTOWNIK_PI_PART_LIB/cmake-build-debug/CMakeFiles/PI_projectSDL2_part_lib.dir/src/library.c.obj"
-  "D:/programowanie/c_cpp/c/NUTOWNIK_PI_PART_LIB/src/main.c" "D:/programowanie/c_cpp/c/NUTOWNIK_PI_PART_LIB/cmake-build-debug/CMakeFiles/PI_projectSDL2_part_lib.dir/src/main.c.obj"
+  "D:/programowanie/c_cpp/c/MUZOWNIK_PI_PART_LIB/src/library.c" "D:/programowanie/c_cpp/c/MUZOWNIK_PI_PART_LIB/cmake-build-debug/CMakeFiles/PI_projectSDL2_part_lib.dir/src/library.c.obj"
+  "D:/programowanie/c_cpp/c/MUZOWNIK_PI_PART_LIB/src/main.c" "D:/programowanie/c_cpp/c/MUZOWNIK_PI_PART_LIB/cmake-build-debug/CMakeFiles/PI_projectSDL2_part_lib.dir/src/main.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

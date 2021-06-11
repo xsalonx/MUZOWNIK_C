@@ -1,4 +1,4 @@
-# Install script for directory: D:/programowanie/c_cpp/c/NUTOWNIK_PI_PART_LIB
+# Install script for directory: D:/programowanie/c_cpp/c/MUZOWNIK_PI_PART_LIB
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "D:/programowanie/c_cpp/c/NUTOWNIK_PI_PART_LIB/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/programowanie/c_cpp/c/MUZOWNIK_PI_PART_LIB/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

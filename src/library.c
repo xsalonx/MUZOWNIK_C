@@ -39,9 +39,9 @@ int fscanf_note(FILE *opus_text_file, NOTES *n) {
 
     return 0;
 }
-CHORDS *fscanf_chord(FILE *opus_text_file) {
+CHORD *fscanf_chord(FILE *opus_text_file) {
 
-    CHORDS *chord = NULL;
+    CHORD *chord = NULL;
     int i;
     char c;
     chord = malloc(sizeof(*chord));
@@ -116,7 +116,7 @@ BARS *fscanf_bar(FILE *opus_text_file) {
         exit(1);
     }
 
-    CHORDS *help_chord = NULL;
+    CHORD *help_chord = NULL;
     bar->prev = NULL;
     bar->next = NULL;
 
@@ -1046,7 +1046,7 @@ int compare_notes(NOTES *n1, NOTES *n2) {
     if (i1 == i2) return 0;
     if (i1 < i2) return -1;
 }
-int sort_uniq_notes(CHORDS *chord_to_sort) {
+int sort_uniq_notes(CHORD *chord_to_sort) {
     if (chord_to_sort->notes_number <= 1) return 0;
     int is_sorted = 0, i, opt, j;
 
@@ -1197,7 +1197,7 @@ int get_serial_key(const char *chosen_key, char serial_key[7]) {
 
     return 0;
 }
-int is_acci_req(CHORDS *chord_to_put, int k, const char *defauly_serial_key) {
+int is_acci_req(CHORD *chord_to_put, int k, const char *defauly_serial_key) {
 
     int i = 0;
     NOTES *n = &(chord_to_put->notes_[k]);
@@ -1256,8 +1256,8 @@ int get_space_for_chord(BARS *bar, BARS_SPACE *b_space, const int *metre) {
     return 0;
 }
 
-int put_chord_on_treb_without_beam(CHORDS *chord_to_put, SDL_Surface *stave, SDL_Surface *blank_stave, int *X_start,
-        int brace, const char serial_key[7], BARS_SPACE *b_space, struct current_OPUS_edits_ *COE) {
+int put_chord_on_treb_without_beam(CHORD *chord_to_put, SDL_Surface *stave, SDL_Surface *blank_stave, int *X_start,
+                                   int brace, const char serial_key[7], BARS_SPACE *b_space, struct current_OPUS_edits_ *COE) {
 
     int k, i, any_put = 0, j;
     int hand = 0;
@@ -1614,8 +1614,8 @@ int put_chord_on_treb_without_beam(CHORDS *chord_to_put, SDL_Surface *stave, SDL
 
     return 0;
 }
-int put_chord_on_bass_without_beam(CHORDS *chord_to_put, SDL_Surface *stave, SDL_Surface *blank_stave, int *X_start,
-        int brace, const char serial_key[7], BARS_SPACE *b_space, struct current_OPUS_edits_ *COE) {
+int put_chord_on_bass_without_beam(CHORD *chord_to_put, SDL_Surface *stave, SDL_Surface *blank_stave, int *X_start,
+                                   int brace, const char serial_key[7], BARS_SPACE *b_space, struct current_OPUS_edits_ *COE) {
 
     int k, i, any_put = 0, j;
     int hand = 1;
@@ -2045,8 +2045,8 @@ int put_chord_on_bass_without_beam(CHORDS *chord_to_put, SDL_Surface *stave, SDL
 
     return 0;
 }
-int put_pause_on_stave_without_beam(CHORDS *chord_to_put, SDL_Surface *stave, SDL_Surface *blank_stave, int *X_start,
-        int brace, int hand, BARS_SPACE *b_space, struct current_OPUS_edits_ *COE){
+int put_pause_on_stave_without_beam(CHORD *chord_to_put, SDL_Surface *stave, SDL_Surface *blank_stave, int *X_start,
+                                    int brace, int hand, BARS_SPACE *b_space, struct current_OPUS_edits_ *COE){
 
 
     SDL_Rect blank_stave_rect;
@@ -2080,8 +2080,8 @@ int put_pause_on_stave_without_beam(CHORDS *chord_to_put, SDL_Surface *stave, SD
     SDL_FreeSurface(pause);
     return 0;
 }
-int put_chord_on_stave_without_beam(CHORDS *chord_to_put, SDL_Surface *stave, SDL_Surface *blank_stave, int *X_start,
-        int hand, int brace, const char *serial_key, BARS_SPACE *b_space, struct current_OPUS_edits_ *COE) {
+int put_chord_on_stave_without_beam(CHORD *chord_to_put, SDL_Surface *stave, SDL_Surface *blank_stave, int *X_start,
+                                    int hand, int brace, const char *serial_key, BARS_SPACE *b_space, struct current_OPUS_edits_ *COE) {
 
     if (chord_to_put->notes_[0].name == 'P') {
         put_pause_on_stave_without_beam(chord_to_put, stave, blank_stave, X_start, brace, hand, b_space, COE);
@@ -2135,7 +2135,7 @@ int put_bar_on_stave(BARS *bar_to_put, SDL_Surface *stave, SDL_Surface *blank_st
     bass_bar_rect.h = 4 * DISTANCE_BETWEEN_LINES + 12 * DISTANCE_BETWEEN_LINES;
 
 
-    CHORDS *help_chord = NULL;
+    CHORD *help_chord = NULL;
     double chords_periods[6][6], max_metre_sum, metre_sum = 0;
     max_metre_sum = (double) chosen_metre[0] / (double) chosen_metre[1];
     chords_periods[0][0] = 1;
@@ -2295,10 +2295,10 @@ int put_all_bars_on_stave(BARS *first_bar_to_put, SDL_Surface *stave, SDL_Surfac
     return 0;
 }
 
-CHORDS *malloc_new_chord(CHORDS *prev, CHORDS *next, int X_position, const char *serial_key){
+CHORD *malloc_new_chord(CHORD *prev, CHORD *next, int X_position, const char *serial_key){
 
     int i;
-    CHORDS *new_chord = malloc(sizeof(*new_chord));
+    CHORD *new_chord = malloc(sizeof(*new_chord));
     new_chord->prev = prev;
     new_chord->next = next;
     new_chord->notes_number = 0;
@@ -2337,7 +2337,7 @@ int free_bar(BARS *bar_to_del) {
     if (bar_to_del == NULL) {
         return 1;
     }
-    CHORDS * help_chord = bar_to_del->first_chord_treb;
+    CHORD * help_chord = bar_to_del->first_chord_treb;
     while (help_chord != NULL) {
         free(help_chord);
         help_chord = help_chord->next;
@@ -2786,7 +2786,7 @@ int put_acci(int pressed_key, struct current_OPUS_edits_ *COE, const Uint8 *KEY_
                 break;
         }
         COE->current_C->local_serial_key[i] = (char) pressed_key;
-        CHORDS *help_chord = COE->current_C->next;
+        CHORD *help_chord = COE->current_C->next;
         while (help_chord != NULL) {
 
             if (help_chord->local_serial_key[i] == default_serial_key[i]) {
@@ -3028,7 +3028,7 @@ int fprint_note(FILE *opus_text_file, NOTES *n) {
 
     return 0;
 }
-int fprint_chord(FILE *opus_text_file, CHORDS *chord_to_print) {
+int fprint_chord(FILE *opus_text_file, CHORD *chord_to_print) {
 
     int i;
     fprintf(opus_text_file, "%c", '[');
@@ -3052,7 +3052,7 @@ int fprint_chord(FILE *opus_text_file, CHORDS *chord_to_print) {
 }
 int fprint_bar(FILE *opus_text_file, BARS *bar_to_print) {
 
-    CHORDS *help_chord = NULL;
+    CHORD *help_chord = NULL;
     fprintf(opus_text_file, "%c", '{');
     fprintf(opus_text_file, "%d:", bar_to_print->X_of_start_bar);
     fprintf(opus_text_file, "%d:", bar_to_print->width_);
