@@ -15,7 +15,7 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR})
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -lm -ldl")
 
-FILE(GLOB SOURCE_FILES src/*)
+FILE(GLOB_RECURSE SOURCE_FILES src/* [src/])
 add_executable(PI_projectSDL2_part_lib ${SOURCE_FILES})
 
 target_link_libraries(PI_projectSDL2_part_lib -lm SDL2)

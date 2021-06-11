@@ -11,33 +11,31 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a62cfe64-33c4-411e-bcad-41d7124d417d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/MUZOWNIK_PI_PART_LIB.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MUZOWNIK_PI_PART_LIB.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+    <list default="true" id="a62cfe64-33c4-411e-bcad-41d7124d417d" name="Default Changelist" comment="Windows commitment">
+      <change afterPath="$PROJECT_DIR$/src/ON_STAVE_PUTTING/init_putting.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ON_STAVE_PUTTING/init_putting.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ON_STAVE_PUTTING/putting.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ON_STAVE_PUTTING/putting.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/OPUS_EDIT_LOGIC/opus_edit_logic.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/OPUS_EDIT_LOGIC/opus_edit_logic.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/OPUS_EDIT_LOGIC/opus_editing_utils.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/OPUS_EDIT_LOGIC/opus_editing_utils.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/OPUS_LOADSAVE/OPUS_loadsave.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/OPUS_LOADSAVE/OPUS_loadsave.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/STRUCTS_MALLFREE/structs_mallfree.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/STRUCTS_MALLFREE/structs_mallfree.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/WINDOWS/windows.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/WINDOWS/windows.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/structs.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PI_projectSDL2_part_lib.exe" beforeDir="false" afterPath="$PROJECT_DIR$/PI_projectSDL2_part_lib.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/a.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/PI_projectSDL2_part_lib.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/PI_projectSDL2_part_lib.dir/C.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/PI_projectSDL2_part_lib.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/PI_projectSDL2_part_lib.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/PI_projectSDL2_part_lib.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/PI_projectSDL2_part_lib.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/PI_projectSDL2_part_lib.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/PI_projectSDL2_part_lib.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/PI_projectSDL2_part_lib.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/PI_projectSDL2_part_lib.dir/objects.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/PI_projectSDL2_part_lib.dir/src/library.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/PI_projectSDL2_part_lib.dir/src/library.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/PI_projectSDL2_part_lib.dir/src/main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/PI_projectSDL2_part_lib.dir/src/main.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/PI_projectSDL2_part_lib.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/PI_projectSDL2_part_lib.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opus.txt" beforeDir="false" afterPath="$PROJECT_DIR$/opus.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/geometry_def.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometry_def_codes.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/library.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/library.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/library.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/library.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wynik.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/wynik.bmp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,11 +61,14 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../MUZOWNIK_PI_project" />
     <property name="settings.editor.selected.configurable" value="configurable.group.build" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\programowanie\c_cpp\c\MUZOWNIK_PI_PART_LIB\src" />
+      <recent name="D:\programowanie\c_cpp\c\MUZOWNIK_PI_PART_LIB\tmp" />
+      <recent name="D:\programowanie\c_cpp\c\MUZOWNIK_PI_PART_LIB\src\OPUS_LOADSAVE" />
       <recent name="D:\programowanie\c_cpp\c\NUTOWNIK_PI_PART_LIB\src" />
     </key>
   </component>
@@ -101,7 +102,7 @@
       <workItem from="1619571017473" duration="619000" />
       <workItem from="1619603798345" duration="28000" />
       <workItem from="1623442828527" duration="859000" />
-      <workItem from="1623443744604" duration="365000" />
+      <workItem from="1623443744604" duration="8283000" />
     </task>
     <task id="LOCAL-00001" summary="Windows commitment">
       <created>1619462266920</created>
@@ -110,7 +111,21 @@
       <option name="project" value="LOCAL" />
       <updated>1619462266920</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Windows commitment">
+      <created>1623444133351</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1623444133351</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Windows commitment">
+      <created>1623444212606</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1623444212606</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

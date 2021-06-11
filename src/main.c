@@ -1,15 +1,17 @@
 #include "library.h"
+#include "OPUS_LOADSAVE/OPUS_loadsave.h"
+#include "WINDOWS/windows.h"
 //author: Lukasz Dubiel
 #define SDL_main main
 
-int main(int argc, char *argv[]) {
-
+void sdl_init() {
     if (SDL_Init(SDL_INIT_EVERYTHING) != 0) {
         printf("Error\n");
         atexit(SDL_Quit);
         exit(1);
     }
-
+}
+void run() {
     char chosen_key[2];
     int chosen_metre[2];
     int opt;
@@ -31,7 +33,13 @@ int main(int argc, char *argv[]) {
             break;
         }
     }
+}
 
+
+int main(int argc, char *argv[]) {
+
+    sdl_init();
+    run();
     SDL_Quit();
 
     return 0;

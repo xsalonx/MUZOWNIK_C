@@ -2,8 +2,28 @@
 // Created by Luksz on 2021-06-11.
 //
 
-#ifndef PI_PROJECTSDL2_PART_LIB_GEOMETRY_DEF_H
-#define PI_PROJECTSDL2_PART_LIB_GEOMETRY_DEF_H
+#ifndef PI_PROJECTSDL2_PART_LIB_GEOMETRY_DEF_CODES_H
+#define PI_PROJECTSDL2_PART_LIB_GEOMETRY_DEF_CODES_H
+
+
+#ifndef __min
+#define __min(a, b) (((a) < (b)) ? (a) : (b))
+#endif
+
+#ifndef __max
+#define __max(a, b) (((a) < (b)) ? (b) : (a))
+#endif
+
+
+int pow_int(int a, int b) {
+    if (a == 0 || a == 1) return a;
+    if (b == 0) return 1;
+    int p = 1, i;
+    for (i = 0; i < b; i++) {
+        p *= a;
+    }
+    return p;
+}
 
 
 #define SCREEN_HIGHT 860
@@ -57,10 +77,7 @@
 #define DISTANCE_BETWEEN_BAR_AND_FIRST_NOTE 15
 #define DISTANCE_BEWTWEEN_LAST_NOTE_AND_BAR 6
 
-#define NUMBER_OF_LINES 5
-#define NUMBER_OF_HANDS 2
-#define NUMBER_OF_BRACES 5
-#define MAX_NOTES_IN_CHORD 7
+
 
 #define Y_OF_FIRST_LINE_TREB_SHARP_KEY 28
 #define Y_OF_FIRST_LINE_BASS_SHARP_KEY 27
@@ -113,4 +130,4 @@
 #define A_in_serial_key 5
 #define H_in_serial_key 6
 
-#endif //PI_PROJECTSDL2_PART_LIB_GEOMETRY_DEF_H
+#endif //PI_PROJECTSDL2_PART_LIB_GEOMETRY_DEF_CODES_H
