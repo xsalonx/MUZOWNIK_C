@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/programowanie/c_cpp/c/NUTOWNIK_PI_PART_LIB/src/geometry_def.h
+
+D:/programowanie/c_cpp/c/NUTOWNIK_PI_PART_LIB/src/library.c
+library.h
+D:/programowanie/c_cpp/c/NUTOWNIK_PI_PART_LIB/src/library.h
+
+D:/programowanie/c_cpp/c/NUTOWNIK_PI_PART_LIB/src/library.h
+stdlib.h
+-
+stdio.h
+-
+math.h
+-
+SDL2/SDL.h
+-
+time.h
+-
+geometry_def.h
+D:/programowanie/c_cpp/c/NUTOWNIK_PI_PART_LIB/src/geometry_def.h
+
+D:/programowanie/c_cpp/c/NUTOWNIK_PI_PART_LIB/src/main.c
+library.h
+D:/programowanie/c_cpp/c/NUTOWNIK_PI_PART_LIB/src/library.h
+
