@@ -15,15 +15,7 @@
 #endif
 
 
-int pow_int(int a, int b) {
-    if (a == 0 || a == 1) return a;
-    if (b == 0) return 1;
-    int p = 1, i;
-    for (i = 0; i < b; i++) {
-        p *= a;
-    }
-    return p;
-}
+
 
 
 #define SCREEN_HIGHT 860

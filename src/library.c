@@ -6,8 +6,46 @@ extern "C"
 #endif
 
 
+int pow_int(int a, int b) {
+    if (a == 0 || a == 1) return a;
+    if (b == 0) return 1;
+    int p = 1, i;
+    for (i = 0; i < b; i++) {
+        p *= a;
+    }
+    return p;
+}
 
+void sdl_init() {
+    if (SDL_Init(SDL_INIT_EVERYTHING) != 0) {
+        printf("Error\n");
+        atexit(SDL_Quit);
+        exit(1);
+    }
+}
+void run() {
+    char chosen_key[2];
+    int chosen_metre[2];
+    int opt;
+    OPUS *current_OPUS = NULL, *prev_OPUS = NULL;
+    while (1) {
 
+        opt = menu_open(chosen_key, chosen_metre);
+        if (opt == CREATING_WINDOW_CODE) {
+            current_OPUS = create_new_OPUS(chosen_key, chosen_metre, NULL);
+            save_OPUS_as_TextFile(current_OPUS);
+            free(current_OPUS);
+        } else if (opt == MENU_LOAD_CODE) {
+            prev_OPUS = fscanf_opus(NULL);
+            current_OPUS = create_new_OPUS(prev_OPUS->key, prev_OPUS->time_sign, prev_OPUS);
+            save_OPUS_as_TextFile(current_OPUS);
+            free_opus(current_OPUS);
+            //free_opus(prev_OPUS);
+        } else if (opt == MENU_EXIT_CODE) {
+            break;
+        }
+    }
+}
 
 void scroll_updown(SDL_Surface *screen, SDL_Surface *stave, SDL_Rect *current, SDL_Event *occurrence) {
 
@@ -23,9 +61,6 @@ void scroll_updown(SDL_Surface *screen, SDL_Surface *stave, SDL_Rect *current, S
     //SDL_BlitSurface(stave, current, screen, NULL);
 
 }
-
-
-
 OPUS *create_new_OPUS(char chosen_key[2], int chosen_metre[2], OPUS *prev_opus) {
 
     int i;

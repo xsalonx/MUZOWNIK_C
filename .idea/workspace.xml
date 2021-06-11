@@ -11,27 +11,11 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a62cfe64-33c4-411e-bcad-41d7124d417d" name="Default Changelist" comment="Windows commitment">
-      <change afterPath="$PROJECT_DIR$/src/ON_STAVE_PUTTING/init_putting.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ON_STAVE_PUTTING/init_putting.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ON_STAVE_PUTTING/putting.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ON_STAVE_PUTTING/putting.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/OPUS_EDIT_LOGIC/opus_edit_logic.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/OPUS_EDIT_LOGIC/opus_edit_logic.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/OPUS_EDIT_LOGIC/opus_editing_utils.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/OPUS_EDIT_LOGIC/opus_editing_utils.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/OPUS_LOADSAVE/OPUS_loadsave.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/OPUS_LOADSAVE/OPUS_loadsave.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/STRUCTS_MALLFREE/structs_mallfree.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/STRUCTS_MALLFREE/structs_mallfree.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/WINDOWS/windows.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/WINDOWS/windows.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/structs.h" afterDir="false" />
+    <list default="true" id="a62cfe64-33c4-411e-bcad-41d7124d417d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PI_projectSDL2_part_lib.exe" beforeDir="false" afterPath="$PROJECT_DIR$/PI_projectSDL2_part_lib.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/opus.txt" beforeDir="false" afterPath="$PROJECT_DIR$/opus.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/geometry_def.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometry_def_codes.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/geometry_def_codes.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometry_def_codes.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/library.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/library.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/library.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/library.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.c" afterDir="false" />
@@ -73,11 +57,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="PI_projectSDL2_part_lib" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="PI_projectSDL2_part_lib" TARGET_NAME="PI_projectSDL2_part_lib" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="PI_projectSDL2_part_lib" RUN_TARGET_NAME="PI_projectSDL2_part_lib">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -102,7 +81,7 @@
       <workItem from="1619571017473" duration="619000" />
       <workItem from="1619603798345" duration="28000" />
       <workItem from="1623442828527" duration="859000" />
-      <workItem from="1623443744604" duration="8283000" />
+      <workItem from="1623443744604" duration="8908000" />
     </task>
     <task id="LOCAL-00001" summary="Windows commitment">
       <created>1619462266920</created>
@@ -125,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623444212606</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="partition done">
+      <created>1623452252685</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1623452252685</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,6 +119,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Windows commitment" />
-    <option name="LAST_COMMIT_MESSAGE" value="Windows commitment" />
+    <MESSAGE value="partition done" />
+    <option name="LAST_COMMIT_MESSAGE" value="partition done" />
   </component>
 </project>
