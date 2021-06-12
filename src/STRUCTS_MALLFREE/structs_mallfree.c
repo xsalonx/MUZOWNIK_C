@@ -43,28 +43,28 @@ int free_bar(BAR *bar_to_del) {
     if (bar_to_del == NULL) {
         return 1;
     }
-    CHORD * help_chord = bar_to_del->first_chord_treb;
-    while (help_chord != NULL) {
-        free(help_chord);
+    CHORD *help_chord = bar_to_del->first_chord_treb;
+    while (help_chord->next != NULL) {
         help_chord = help_chord->next;
-    }
+        free(help_chord->prev);
+    } free(help_chord);
+
     help_chord = bar_to_del->first_chord_bass;
-    while (help_chord != NULL) {
-        free(help_chord);
+    while (help_chord->next != NULL) {
         help_chord = help_chord->next;
-    }
+        free(help_chord->prev);
+    } free(help_chord);
 
     return 0;
 }
 int free_opus(OPUS *opus_to_del) {
 
-    BAR *bar_to_del = opus_to_del->first_BAR;
-    while (bar_to_del->next != NULL) {
-        bar_to_del = bar_to_del->next;
-        free_bar(bar_to_del->prev);
-        bar_to_del = bar_to_del->next;
+    BAR *help_bar = opus_to_del->first_BAR;
+    while (help_bar->next != NULL) {
+        help_bar = help_bar->next;
+        free_bar(help_bar->prev);
     }
-    free_bar(bar_to_del);
+    free_bar(help_bar);
     free(opus_to_del);
     return 0;
 }

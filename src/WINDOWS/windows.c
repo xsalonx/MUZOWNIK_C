@@ -41,7 +41,7 @@ int metre_choosing(SDL_Surface *screen, SDL_Window *window, int chosen_metre[2])
     chosen_metre[1] = 0;
     SDL_Event occurrence;
     SDL_Surface *metre_chose = NULL;
-    SDL_Surface *stav = NULL;
+    SDL_Surface *stave = NULL;
     SDL_Surface *digits[10];
     char path[33] = "obrazki/metre_choose/digit_0.bmp";
     int pos = 27, i, may_exit = 0, tr = 0, key, current_opt = METRE_WINDOW_CODE;
@@ -52,18 +52,18 @@ int metre_choosing(SDL_Surface *screen, SDL_Window *window, int chosen_metre[2])
 
     }
     metre_chose = SDL_LoadBMP("obrazki/metre_choose/metre_chosing.bmp");
-    stav = SDL_LoadBMP("obrazki/metre_choose/stave.bmp");
+    stave = SDL_LoadBMP("obrazki/metre_choose/stave.bmp");
 
 
     SDL_Rect RECT_STAVE_SRC[2], RECT_STAVE_DST[2], RECT_DIGIT_DST[8];
     RECT_STAVE_SRC[0].x = 0;
     RECT_STAVE_SRC[0].y = 0;
-    RECT_STAVE_SRC[0].w = stav->w;
-    RECT_STAVE_SRC[0].h = stav->h / 2;
+    RECT_STAVE_SRC[0].w = stave->w;
+    RECT_STAVE_SRC[0].h = stave->h / 2;
     RECT_STAVE_SRC[1].x = 0;
-    RECT_STAVE_SRC[1].y = stav->h / 2;
-    RECT_STAVE_SRC[1].w = stav->w;
-    RECT_STAVE_SRC[1].h = stav->h / 2;
+    RECT_STAVE_SRC[1].y = stave->h / 2;
+    RECT_STAVE_SRC[1].w = stave->w;
+    RECT_STAVE_SRC[1].h = stave->h / 2;
 
     RECT_STAVE_DST[0].x = X_STAVE_METRE_CHOOSING;
     RECT_STAVE_DST[0].y = FIRST_Y_METRE_CHOOSE - 2;
@@ -84,7 +84,7 @@ int metre_choosing(SDL_Surface *screen, SDL_Window *window, int chosen_metre[2])
     RECT_DIGIT_DST[5].y = SECOND_Y_METRE_CHOOSE;
 
     SDL_BlitSurface(metre_chose, NULL, screen, NULL);
-    SDL_BlitSurface(stav, NULL, screen, &RECT_STAVE_DST[0]);
+    SDL_BlitSurface(stave, NULL, screen, &RECT_STAVE_DST[0]);
 
     while (!may_exit) {
         while (SDL_PollEvent(&occurrence)) {
@@ -116,7 +116,7 @@ int metre_choosing(SDL_Surface *screen, SDL_Window *window, int chosen_metre[2])
                         chosen_metre[tr] /= 10;
                     }
 
-                    SDL_BlitSurface(stav, &RECT_STAVE_SRC[tr], screen, &RECT_STAVE_DST[tr]);
+                    SDL_BlitSurface(stave, &RECT_STAVE_SRC[tr], screen, &RECT_STAVE_DST[tr]);
 
 
                     //// When numerator or denominator is single digit it
@@ -140,8 +140,12 @@ int metre_choosing(SDL_Surface *screen, SDL_Window *window, int chosen_metre[2])
                 current_opt = MENU_NEW_STAVE_CODE;
             }
             if (occurrence.key.type == SDL_KEYDOWN && occurrence.key.keysym.sym == SDLK_RETURN) {
-                may_exit = 1;
-                current_opt = CREATING_WINDOW_CODE;
+                if (chosen_metre[0] * chosen_metre[1] > 0) {
+                    may_exit = 1;
+                    current_opt = CREATING_WINDOW_CODE;
+                } else {
+                    fprintf(stderr, "You didn't choose metre\n");
+                }
             }
 
             SDL_UpdateWindowSurface(window);
@@ -316,34 +320,49 @@ int fifths_choosing(SDL_Surface *screen, SDL_Window *window, char chosen_key[2])
     SDL_Rect RECT_fifths_dots[15];
     RECT_fifths_dots[0].x = 390;
     RECT_fifths_dots[0].y = 4;
+
     RECT_fifths_dots[1].x = 559;
     RECT_fifths_dots[1].y = 50;
+
     RECT_fifths_dots[2].x = 680;
     RECT_fifths_dots[2].y = 173;
+
     RECT_fifths_dots[3].x = 723;
     RECT_fifths_dots[3].y = 338;
+
     RECT_fifths_dots[4].x = 684;
     RECT_fifths_dots[4].y = 509;
+
     RECT_fifths_dots[5].x = 564;
     RECT_fifths_dots[5].y = 628;
+
     RECT_fifths_dots[6].x = 590;
     RECT_fifths_dots[6].y = 722;
+
     RECT_fifths_dots[7].x = 392;
     RECT_fifths_dots[7].y = 679;
+
     RECT_fifths_dots[8].x = 407;
     RECT_fifths_dots[8].y = 761;
+
     RECT_fifths_dots[9].x = 215;
     RECT_fifths_dots[9].y = 632;
+
     RECT_fifths_dots[10].x = 156;
     RECT_fifths_dots[10].y = 712;
+
     RECT_fifths_dots[11].x = 98;
     RECT_fifths_dots[11].y = 513;
+
     RECT_fifths_dots[12].x = 59;
     RECT_fifths_dots[12].y = 340;
+
     RECT_fifths_dots[13].x = 100;
     RECT_fifths_dots[13].y = 160;
+
     RECT_fifths_dots[14].x = 224;
     RECT_fifths_dots[14].y = 51;
+
 
     int current_fifths_opt = 0, prev_fifths_opt = -1, may_exit = 0, current_opt = 1;
     SDL_Surface *fifths_circle = NULL;
@@ -498,7 +517,7 @@ int menu_open(char chosen_key[2], int chosen_metre[2]) {
                 }
             }
         }
-        ////// When opening existing stove
+        ////// When opening existing stave
         if (current_opt == MENU_LOAD_CODE) {
             may_exit = 1;
         }

@@ -32,16 +32,28 @@ void run() {
 
         opt = menu_open(chosen_key, chosen_metre);
         if (opt == CREATING_WINDOW_CODE) {
+            printf("Creating new opus\n");
             current_OPUS = create_new_OPUS(chosen_key, chosen_metre, NULL);
+            printf("End of editing opus\n");
+            printf("Saving opus as txt\n");
             save_OPUS_as_TextFile(current_OPUS);
+            printf("Opus saved\n");
+            printf("Try to free allocated memory of opus\n");
             free(current_OPUS);
+            printf("Allocated memoty for opus freed\n");
         } else if (opt == MENU_LOAD_CODE) {
+            printf("Loading opus\n");
             prev_OPUS = fscanf_opus(NULL);
+            printf("Opus loaded\n");
+            printf("Start editing loaded opus\n");
             current_OPUS = create_new_OPUS(prev_OPUS->key, prev_OPUS->time_sign, prev_OPUS);
+            printf("End of editing loaded opus\n");
+            printf("Saving edited opus\n");
             save_OPUS_as_TextFile(current_OPUS);
-            free_opus(current_OPUS);
-            //free_opus(prev_OPUS);
+            printf("Edited opus saved\n");
+            free_opus(current_OPUS); // also do free_opus(prev_OPUS); prev_OPUS == current_OPUS;
         } else if (opt == MENU_EXIT_CODE) {
+            printf("Ending work\n");
             break;
         }
     }
